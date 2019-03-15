@@ -1,8 +1,18 @@
-th{
-	background-color:#99ccFF;
+td{
+	color:rgb(0, 0, 0);
 }
-
-
-body {color: rgb(0, 0, 0);}
-h1 {color:rgb(0, 0, 0);}
-h2 {color:rgb(0, 0, 0);}
+body{
+    background-color: #99ccFF;
+}
+h1{
+    color:rgb(0, 0, 0);
+}
+h2{
+    color:rgb(0, 0, 0);
+}
+tr{
+    color:rgb(0, 0, 0);
+}
+td{
+    color:rgb(0, 0, 0);
+}
