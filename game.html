@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" sizes="any"" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+
 .thumbnail 
 {
     float:center;
@@ -111,8 +112,8 @@ table{
 <center>
 <div class="sidebar">
  <ul>
- <li><a href="#">自我簡介</a></li>
- <li><a href="#">社團</a></li>
+ <li><a href="https://www.facebook.com/profile.php?id=100007885984929">Facebook</a></li>
+ <li><a href="https://www.instagram.com/?hl=zh-tw">Instagram</a></li>
  
  </ul>
 </div>
@@ -132,6 +133,9 @@ table{
   </div> 
 </div>
 <img src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.0-9/64019176_2319327901673387_3305141694080483328_n.jpg?_nc_cat=105&_nc_ht=scontent.fkhh1-1.fna&oh=089e7c435e64643e92de21cf412a4d70&oe=5D9B8808" style="position:absolute;top:47px;right:0px;" width="400" height="750">
+<img src="https://scontent.fkhh1-1.fna.fbcdn.net/v/t1.0-9/62388088_2250249398638035_2000127408883105792_n.jpg?_nc_cat=105&_nc_eui2=AeFin4gV4FsLyaJ-EgBZ76s0mx_CeCez5fotmh6k_PkmouvtbiAIPtnQa5GAiN_2Xui64lyN5qe2geZ18zwLpJVJCuHJ9cpG4520ACeewc7zag&_nc_ht=scontent.fkhh1-1.fna&oh=706258969853dd4293d7981f5842c575&oe=5D814F9F" class="01" style="position:absolute;top:500px;right:80px;" width="300" height="100">
+<input type="button" value="重來" style="position:absolute;top:610px;right:320px;" onclick="reset()">
+<input type="button" value="完成" style="position:absolute;top:610px;right:240px;" onclick="ok()">
 <table border="2"  style="position:absolute;top:80px;left:220px;" width="600" height="700" >
 <tr>
     <td><font size="10">1</font></td>
@@ -165,10 +169,41 @@ table{
     <td><font size="10">4</font></td>
     <td><font size="10">1</font></td>
     <td><font size="10">2</font></td>
-    <td><font size="10"><input type="text"  id="55" style="font-size:8px;padding:20px;" value=""></font></td>
-    <td><font size="10">3</font></td>
+    <td><font size="10"><input type="text"  id="53" style="font-size:8px;padding:20px;" value=""></font></td>
+    <td><font size="10">5</font></td>
 </tr>
 </table>
+
+<script>
+function reset(){
+    document.getElementById("13").value="";
+    document.getElementById("25").value="";
+    document.getElementById("31").value="";
+    document.getElementById("42").value="";
+    document.getElementById("53").value="";
+}
+function ok(){
+    a = document.getElementById("13").value;
+    b = document.getElementById("25").value;
+    c = document.getElementById("31").value;
+    d = document.getElementById("42").value;
+    e = document.getElementById("53").value;
+
+    document.getElementById("13").value="";
+    document.getElementById("25").value="";
+    document.getElementById("31").value="";
+    document.getElementById("42").value="";
+    document.getElementById("53").value="";
+    if(a==3&&b==5&&c==1&&d==2&&e==3){
+        alert("恭喜答對");
+        document.location.reload();
+    }
+    else{
+        alert("可能要再試試看喔");
+        document.location.reload();
+    }
+}
+</script>
 
 </body>
 </html>
